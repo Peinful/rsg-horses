@@ -249,6 +249,7 @@ RegisterNetEvent('rsg-horses:client:triggerStable', function(zone)
                         icon = "fas fa-award",
                         label =  Lang:t('menu.horse_trainer_shop'),
                         targeticon = "fas fa-eye",
+                        job = 'horsetrainer', --adds job requirement to be able to see the shop
                         action = function()
                         TriggerEvent('rsg-horsetrainer:client:OpenTrainerShop')
                         end
